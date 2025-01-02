@@ -24,28 +24,12 @@ body {
   font-family: "Harmond";
   src: url("/fonts/Harmond-SemiBoldCondensed.otf") format("opentype");
   font-weight: 600; /* Regular */
-  font-style: normal;
+  font-style: semi-bold;
 }
 
 @font-face {
-  font-family: "Harmond";
-  src: url("/fonts/Harmond-SemBdItaCond.otf") format("opentype");
-  font-weight: 600; /* Bold */
-  font-style: italic;
-}
-@font-face {
-  font-family: "Harmond";
-  src: url("/fonts/Harmond-ExtraBoldExpanded.otf") format("opentype");
-  font-weight: 800; /* Bold */
-  font-style: normal;
-}
-
-.harmond-text {
-  font-family: "Harmond", sans-serif;
-}
-
-.extra-bold {
-  font-family: "Harmond", sans-serif;
-  font-weight: 800;
+  font-family: "MyFont";
+  src: url("/fonts/MyFont-Bold.otf") format("opentype");
+  font-weight: 700; /* Bold */
   font-style: normal;
 }
