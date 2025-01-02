@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: "Harmond";
+  src: url("/fonts/MyFont-Regular.otf") format("opentype");
+  font-weight: 600; /* Regular */
+  font-style: semi-bold;
+}
+
+@font-face {
+  font-family: "MyFont";
+  src: url("/fonts/MyFont-Bold.otf") format("opentype");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}

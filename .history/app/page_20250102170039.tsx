@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="px-4 py-6 flex flex-col justify-between h-screen ">
-      <main className=" flex flex-col h-[75%] justify-between">
+      <main className=" flex flex-col h-[60%] justify-between">
         <div>
           <p className=" text-8xl">
             Hi I'm Charlie Smith 👋
