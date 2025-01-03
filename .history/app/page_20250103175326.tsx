@@ -2,44 +2,39 @@
 import Image from "next/image";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 export default function Home() {
-  const containerRef = useRef<HTMLDivElement>(null); // Create the container ref
+  const containerRef = useRef<HTMLDivElement>(null);
+  useGSAP(() => {
+    const tl = gsap.timeline({
+      defaults: { ease: "power3.out", duration: 1 },
+    });
 
-  useGSAP(
-    () => {
-      // Animate each line individually
-      gsap.fromTo(
-        containerRef.current?.querySelectorAll(".line"), // Select all elements with the "line" class
-        { y: 100, opacity: 0 }, // Start state
-        {
-          y: 0,
-          opacity: 1,
-          duration: 1,
-          ease: "power4.inOut",
-          stagger: 0.2, // Add a stagger of 0.2 seconds between animations
-        }
-      );
-    },
-    { scope: containerRef }
-  );
+    // Animate the text up
+    tl.fromTo(
+      containerRef.current?.querySelector(".text-8xl"),
+      { y: 100, opacity: 0 },
+      { y: 0, opacity: 1 }
+    );
+  });
 
   return (
     <div
       className="px-4 py-6 flex flex-col justify-between h-screen "
-      ref={containerRef}
+      ref="containerRef"
     >
       <main className=" flex flex-col h-[75%] justify-between">
         <div>
-          <p className="text-8xl">
-            <span className="line">Hi I'm Charlie 👋</span>
-            <br />
-            <span className="line">Graphic Designer, Web Developer</span>
-            <br />
-            <span className="line">& Brand strategist</span>
+          <p className=" text-8xl">
+            Hi I'm Charlie 👋
+            <br />{" "}
+            <span>
+              Graphic Designer, Web Developer
+              <br /> & Brand strategist
+            </span>
           </p>
         </div>
-        <div className="grid grid-cols-3  text-xs max-w-[50%] gap-6 line">
+        <div className="grid grid-cols-3  text-xs max-w-[50%] gap-6">
           <div>
             <h3 className="font-mono pb-2">Work </h3>
             <p>
@@ -80,7 +75,7 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <footer className=" line ">
+      <footer className=" ">
         <p className=" text-6xl">
           <a href="https://linkedin.com/in/charliedev" target={"_blank"}>
             LinkedIn

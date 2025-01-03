@@ -8,20 +8,14 @@ export default function Home() {
 
   useGSAP(
     () => {
-      // Animate each line individually
+      // GSAP animation
       gsap.fromTo(
-        containerRef.current?.querySelectorAll(".line"), // Select all elements with the "line" class
+        ".text-8xl", // Selects the element with this class within the scope
         { y: 100, opacity: 0 }, // Start state
-        {
-          y: 0,
-          opacity: 1,
-          duration: 1,
-          ease: "power4.inOut",
-          stagger: 0.2, // Add a stagger of 0.2 seconds between animations
-        }
+        { y: 0, opacity: 1, duration: 1, ease: "power3.out" } // End state
       );
     },
-    { scope: containerRef }
+    { scope: containerRef } // Define the scope for the animation
   );
 
   return (
@@ -39,7 +33,7 @@ export default function Home() {
             <span className="line">& Brand strategist</span>
           </p>
         </div>
-        <div className="grid grid-cols-3  text-xs max-w-[50%] gap-6 line">
+        <div className="grid grid-cols-3  text-xs max-w-[50%] gap-6">
           <div>
             <h3 className="font-mono pb-2">Work </h3>
             <p>
@@ -80,7 +74,7 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <footer className=" line ">
+      <footer className=" ">
         <p className=" text-6xl">
           <a href="https://linkedin.com/in/charliedev" target={"_blank"}>
             LinkedIn
