@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/portfolio",
+  basePath: "/your-repo-name", // Replace "your-repo-name" with your GitHub repository name
   trailingSlash: true,
 };
 
