@@ -37,7 +37,7 @@ export default function Home() {
           </div>
 
           <div>
-            <h3 className="font-mono pb-2">Awards Etc </h3>
+            <h3>Awards Etc </h3>
             <a
               href={
                 "https://trumanbrewery.com/files/rooms/3526/OTB_NEWS_1706_2.html"

@@ -15,29 +15,24 @@ export default function Home() {
           </p>
         </div>
         <div className="grid grid-cols-3  text-xs max-w-[50%] gap-6">
+          <p>
+            I led creative and technical efforts as Web Developer & Designer at{" "}
+            <span>
+              <a href="https://reveng.ai">RevEng.AI</a>
+            </span>
+            , where I designed the brand identity, developed a sleek web app
+            dashboard with React and Next.js, and crafted a cohesive user
+            experience with Tailwind CSS. <br />
+            Previously, I was a Designer at Playground XYZ, where I established
+            brand guidelines, rebuilt the company website in Webflow, and shaped
+            the creative direction for core products.
+            <br />
+            Before that I was Design team leader at The Cheeky Panda, where I
+            combined design and marketing expertise to drive product success on
+            global Amazon marketplaces.
+          </p>
           <div>
-            <h3 className="font-mono pb-2">Work </h3>
-            <p>
-              I led creative and technical efforts as Web Developer & Designer
-              at{" "}
-              <span>
-                <a href="https://reveng.ai">RevEng.AI</a>
-              </span>
-              , where I designed the brand identity, developed a sleek web app
-              dashboard with React and Next.js, and crafted a cohesive user
-              experience with Tailwind CSS. <br />
-              Previously, I was a Designer at Playground XYZ, where I
-              established brand guidelines, rebuilt the company website in
-              Webflow, and shaped the creative direction for core products.
-              <br />
-              Before that I was Design team leader at The Cheeky Panda, where I
-              combined design and marketing expertise to drive product success
-              on global Amazon marketplaces.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="font-mono pb-2">Awards Etc </h3>
+            <h3>Awards Etc </h3>
             <a
               href={
                 "https://trumanbrewery.com/files/rooms/3526/OTB_NEWS_1706_2.html"
