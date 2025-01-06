@@ -35,7 +35,7 @@ export default function Home() {
       <main className=" flex flex-col h-[75%] justify-between">
         <div>
           <p className="text-8xl">
-            <span className="line">Hi I&apos;m Charlie 👋</span>
+            <span className="line">Hi Im Charlie 👋</span>
             <br />
             <span className="line">Graphic Designer, Web Developer</span>
             <br />
